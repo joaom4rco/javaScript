@@ -1,0 +1,5 @@
+console.log('meu nome é "joao", estou fazendo o curso de JavaScript às',15, 'da tarde, e estou gostando muito ')
+console.log('Eu estou com uma dúvida de quanto é 3*8+55/2-88,', 'quanto é?')
+console.log('o resultado dessa conta é:', 3*8+55/2-88)
+console.log('-muito obrigado')
+console.log('-de nada')
