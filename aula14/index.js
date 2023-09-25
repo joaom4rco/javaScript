@@ -11,3 +11,5 @@ let d = c
 console.log(c,d)
 c.push(4)
 console.log(c,d)
+c.pop()
+console.log(c,d)
