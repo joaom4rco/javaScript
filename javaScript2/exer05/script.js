@@ -7,4 +7,4 @@ document.body.innerHTML += `Qual o último índice da letra LETRA no seu nome? $
 document.body.innerHTML += `As últimas 3 letras do seu nome são: ${nome.slice(-3)} <br />`;
 document.body.innerHTML += `As palavras do seu nome são: ${nome.split('')} <br />`;
 document.body.innerHTML += `Seu nome com letras maiúsculas: ${nome.toLocaleUpperCase()} <br /> `;
-document.body.innerHTML += `Seu nome com letras minúsculas: <strong >  ${nome.toLocaleLowerCase()}</strong><br />`;
+document.body.innerHTML += `Seu nome com letras minúsculas: <strong id="minuscula">  ${nome.toLocaleLowerCase()}</strong><br />`;
