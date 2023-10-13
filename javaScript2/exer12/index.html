@@ -7,10 +7,10 @@
 </head>
 <body>
     <form class="form" action="" method="get">
-        <p>nome: <input type="text" class="nome"></p>
-        <p>Sobrenome: <input type="text" class="Sobrenome"></p>
-        <p>altura: <input type="text"class="altura"></p>
-        <p>peso: <input type="text"class="peso"></p>
+        <p>nome: <input type="text" class="nome" required minlength="3"></p>
+        <p>Sobrenome: <input type="text" class="sobrenome" required minlength="3"></p>
+        <p>altura: <input type="text"class="altura"required></p>
+        <p>peso: <input type="text"class="peso"required></p>
         <button type="submit">Enviar</button>
         <button type="reset">Apagar</button>
     </form>
