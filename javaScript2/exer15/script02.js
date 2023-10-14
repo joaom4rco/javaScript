@@ -1,4 +1,4 @@
-const hora = 18
+const hora = 100
 
 if (hora >= 0 && hora <= 12) {
     console.log('Bom dia!')

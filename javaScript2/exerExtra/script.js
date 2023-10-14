@@ -5,4 +5,4 @@ const saoPaulo = 60
 const campeao = 75
     if (corinthians >= campeao) {
         console.log('voce ganhou')
-    } 
+    }
