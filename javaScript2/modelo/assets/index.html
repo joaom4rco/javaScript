@@ -34,15 +34,18 @@
                 <h1>calcule seu IMC</h1>
             </div>
             <div class="calc-imc">
-                <label for=".php" id="form">
-                    <p>Peso:</p>
-                    <input type="number" name="peso" id="peso">
+                <form for="/" id="form" method="post"  >
+                    
+                    <label for="peso">peso:</label>
+                    <input type="text" name="peso" id="peso">
 
-                    <p>Altura:</p>
-                    <input type="number" name="Altura" id="Altura">
+                    <label for="altura">Altura:</label>
+                    <input type="text" name="Altura" id="Altura">
 
                     <button type="submit">Enviar</button>
-                </label>
+
+                    <div class="resultado"></div>
+                </form>
             </div>
         </div>
     </section>
