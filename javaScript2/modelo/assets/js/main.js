@@ -18,7 +18,7 @@ form.addEventListener('submit', function(e){
         console.log(`o seu imc é de ${calcImc.toFixed(1)} voce está no peso normal`)
     }
 });
-function 
+
 function criaP () {
     const p = document.createElement(p);
     return p ;
