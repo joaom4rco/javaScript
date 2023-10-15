@@ -1,5 +1,4 @@
-const peso = document.getElementById('#peso')
-const altura = document.getElementById('#altura')
-
-const calculoImc = peso / (altura * altura)
-console.log(calculoImc)
+const form = document.querySelector('#form')
+form.addEventListener('submit', function(evento){
+    
+});
