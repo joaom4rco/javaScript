@@ -43,6 +43,8 @@ function mensagem (msg, isValid) {
 
     if (isValid) {
         p.classList.add('paragrafo-resultado')
+    } else {
+        p.classList.add('bad')
     }
 
     const p = criaP()

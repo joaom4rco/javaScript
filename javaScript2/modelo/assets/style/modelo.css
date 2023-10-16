@@ -69,4 +69,10 @@ button {
 button:hover {
     background-color: var(--primery-color-dark);
 }
-.paragrafo-re
+.paragrafo-resultado .bad  {
+    background-color: rgb(160, 252, 160);
+    padding: 10px;
+}
+.bad {
+    background-color: rgb(255, 152, 152);
+}
