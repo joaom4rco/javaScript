@@ -49,11 +49,7 @@ function mensagem (msg, isValid) {
     const resultado = document.querySelector('.resultado');
     resultado.innerHTML = '';
 
-    if (isValid) {
-        p.classList.add('paragrafo-resultado')
-    }else {
-        p.classList.add('bad')
-    }
+    
 
     const p = criaP()
     p.innerHTML = msg

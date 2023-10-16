@@ -1,0 +1,7 @@
+const dataAtual = new Date()
+console.log(dataAtual.toString())
+console.log(dataAtual.getDate())
+console.log(dataAtual.getFullYear())
+console.log(dataAtual.getDate())
+console.log(dataAtual.getDate())
+console.log(dataAtual.getDate())
