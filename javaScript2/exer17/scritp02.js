@@ -1,6 +1,6 @@
-function horaAEsquerda {
-    return dataBrasil 
-}
+function horaAEsquerda (num) {
+    return num
+};
 function relogio (data) {
     const dia = data.getDate()
     const mes = data.getMonth() + 1
