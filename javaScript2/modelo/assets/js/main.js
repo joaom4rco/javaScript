@@ -2,7 +2,7 @@ const form = document.querySelector('#form');
 
 form.addEventListener('submit', function(e){
     e.preventDefault();
-    console.log('evento')  ;
+    console.log('evento') ;
     
     const inputPeso = e.target.querySelector('#peso');
     const inputAltura = e.target.querySelector('#altura');
@@ -12,23 +12,31 @@ form.addEventListener('submit', function(e){
 
     const calcImc = peso / (altura * altura);
 
-    if (Number.isNaN(calcImc)) {
+    if (!peso) {
         mensagem('nao consigo fazer a conta', false)
+        return;
     }
+    if (!altura) {
+        mensagem('nao consigo fazer a conta', false)
+        return;
+    }
+
+    
+
     if (calcImc < 18.5) {
-        mensagem(`o seu imc é de ${calcImc.toFixed(1)} voce está abaixo do peso`)
+        mensagem(`o seu imc é de ${calcImc.toFixed(2)} voce está abaixo do peso` )
     }else if (calcImc >= 18.5 && calcImc <= 24.9 ) {
-        mensagem(`o seu imc é de ${calcImc.toFixed(1)} voce está no peso normal`)
+        mensagem(`o seu imc é de ${calcImc.toFixed(2)} voce está no peso normal` )
     }else if (calcImc >= 25 && calcImc <= 29.9) {
-        mensagem(`o seu imc é de ${calcImc.toFixed(1)} voce está com Sobrepeso`)
+        mensagem(`o seu imc é de ${calcImc.toFixed(2)} voce está com Sobrepeso`)
     }else if (calcImc >= 30 && calcImc <=34.9) {
-        mensagem(`o seu imc é de ${calcImc.toFixed(1)} voce está com Obesidade grau 1`)
+        mensagem(`o seu imc é de ${calcImc.toFixed(2)} voce está com Obesidade grau 1`)
     }else if (calcImc >= 35 && calcImc <= 39.9) {
-        mensagem(`o seu imc é de ${calcImc.toFixed(1)} voce está com Obesidade grau 2`)
+        mensagem(`o seu imc é de ${calcImc.toFixed(2)} voce está com Obesidade grau 2`)
     }else if (calcImc >= 40 && calcImc <= 59.9) {
-        mensagem(`o seu imc é de ${calcImc.toFixed(1)} voce está com Obesidade grau 3`)
+        mensagem(`o seu imc é de ${calcImc.toFixed(2)} voce está com Obesidade grau 3`)
     }else if (calcImc >= 60) {
-        mensagem(`o seu imc é de ${calcImc.toFixed(1)} como voce está vivo??`)
+        mensagem(`o seu imc é de ${calcImc.toFixed(2)} como voce está vivo??`)
     }
 });
 
@@ -43,7 +51,7 @@ function mensagem (msg, isValid) {
 
     if (isValid) {
         p.classList.add('paragrafo-resultado')
-    } else {
+    }else {
         p.classList.add('bad')
     }
 
