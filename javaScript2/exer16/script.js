@@ -8,8 +8,8 @@ const corPadrao = corUsuario || 'blue'
 const falaCor = `sua cor é ${corPadrao}`
 
 const nivelDeSombra = [0,1,2,3,4,5,6,7,8,9]
-const sombraUsu = nivelDeSombreamento[3]
-const sombraPadrao = sombreamentoUsu || 0
+const sombraUsu = nivelDeSombra[3]
+const sombraPadrao = sombraUsu || 0
+const falaSombra = `seu sombreamento é de ${sombraPadrao}%`
 
-const falaSombra = `seu sombreamento é de ${sombreamentoPadrao} %`
 console.log(falaCor, falaSombra)
