@@ -1,14 +1,14 @@
-function horaAEsquerda (num) {
-    return num
+function zeroAEsquerda (num) {
+    return num >= 10 ? num : `0${num}` 
 };
 function relogio (data) {
-    const dia = data.getDate()
-    const mes = data.getMonth() + 1
-    const ano = data.getFullYear()
-    const hora = data.getHours()
-    const min = data.getMinutes()
-    const seg = data.getSeconds()
-    const ms = data.getMilliseconds()
+    const dia = zeroAEsquerda(data.getDate())
+    const mes = zeroAEsquerda(data.getMonth() + 1)
+    const ano = zeroAEsquerda(data.getFullYear())
+    const hora = zeroAEsquerda(data.getHours())
+    const min = zeroAEsquerda(data.getMinutes())
+    const seg = zeroAEsquerda(data.getSeconds())
+    const ms = zeroAEsquerda(data.getMilliseconds())
 
     return `${dia}/${mes}/${ano} ${hora}:${min}:${seg}`
 }
