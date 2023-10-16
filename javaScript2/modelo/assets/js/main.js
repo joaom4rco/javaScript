@@ -41,6 +41,10 @@ function mensagem (msg, isValid) {
     const resultado = document.querySelector('.resultado');
     resultado.innerHTML = '';
 
+    if (isValid) {
+        p.classList.add('paragrafo-resultado')
+    }
+
     const p = criaP()
     p.innerHTML = msg
     resultado.appendChild(p);
