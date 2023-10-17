@@ -26,4 +26,4 @@ break
 default:
     diaSemanaTexto = ''
 }
-console.log(diaSemana, diaSemanaTexto)
+console.log(diaSemana, diaSemanaTexto);
