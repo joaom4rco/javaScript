@@ -11,6 +11,12 @@ break;
 case 2:
     diaSemanaTexto = 'terça'
 break 
+case 3:
+    diaSemanaTexto = 'quarta'
+break
+case 4:
+    diaSemanaTexto = 'quinta'
+break
 
 }
 console.log(diaSemana, diaSemanaTexto)
