@@ -21,7 +21,8 @@ function getDiaSemanaTexto(diaSemana) {
             diaSemanaTexto = 'sexta'
             return diaSemanaTexto
         case 6:
-            dia
+            diaSemanaTexto = 'sabado'
+            return diaSemanaTexto
     }
 }
 
