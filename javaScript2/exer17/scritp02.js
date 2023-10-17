@@ -10,7 +10,7 @@ function relogio (data) {
     const seg = zeroAEsquerda(data.getSeconds())
     const ms = zeroAEsquerda(data.getMilliseconds())
 
-    return `${dia}/${mes}/${ano} ${hora}:${min}:${seg}`
+    return `${dia}`
 }
 const data = new Date()
 const dataBrasil = relogio(data)

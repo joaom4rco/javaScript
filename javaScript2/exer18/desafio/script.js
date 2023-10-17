@@ -1,5 +1,3 @@
-const dataHojeTexto = document.getElementById('data__hoje');
-
 function getDiaSemanaTexto(diaSemana) {
     let diaSemanaTexto;
 
@@ -27,7 +25,6 @@ function getDiaSemanaTexto(diaSemana) {
             return diaSemanaTexto
     }
 };
-function getDiaMes
 function getMesTexto(mes) {
     let mesTexto;
 
@@ -70,23 +67,25 @@ function getMesTexto(mes) {
         return mesTexto    
     }
 };
+function zeroAEsquerda (num) {
+    return num >= 10 ? num : `0${num}` 
+};
 function anoHoraMinutos (anoHoraMin) {
-    let anoAtual = dataHoje.getFullYear()
-    let hora = dataHoje.getHours()
-    let min = dataHoje.getMinutes()
+    let anoAtual = zeroAEsquerda(dataHoje.getFullYear())
+    let hora = zeroAEsquerda(dataHoje.getHours())
+    let min = zeroAEsquerda(dataHoje.getMinutes())
     return `${anoAtual} as ${hora}:${min}`
 
 };
+const dataHojeTexto = document.querySelector('.container h1');
 const dataHoje = new Date();
 
 const diaSemana = dataHoje.getDay();
-let diaSemanaTexto = getDiaSemanaTexto(diaSemana);
+const diaSemanaTexto = getDiaSemanaTexto(diaSemana);
 
+const diaMes = dataHoje.getDate()
 const mes = dataHoje.getMonth() + 1;
-let mesTexto = getMesTexto(mes);
+const mesTexto = getMesTexto(mes);
 
 const anoHoraMin = anoHoraMinutos(dataHoje);
-
-dataHojeTexto.innerHTML = `<p>${diaSemanaTexto}, ${mes} de ${mesTexto} de ${anoHoraMin}`;
-
-console.log(diaSemanaTexto, mes, mesTexto, anoHoraMin);
+dataHojeTexto.innerHTML = `${diaSemanaTexto}, ${diaMes} de ${mesTexto} de ${anoHoraMin}`;
