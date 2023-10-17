@@ -27,6 +27,7 @@ function getDiaSemanaTexto(diaSemana) {
             return diaSemanaTexto
     }
 };
+function getDiaMes
 function getMesTexto(mes) {
     let mesTexto;
 
