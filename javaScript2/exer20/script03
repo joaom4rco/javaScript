@@ -1,0 +1,8 @@
+const pessoa = {
+    nome:'joao',
+    sobrenome: 'santos',
+    idade: 18,
+    endereco: {
+        rua: 'av brasil'
+    }
+}
