@@ -3,6 +3,8 @@ const pessoa = {
     sobrenome: 'santos',
     idade: 18,
     endereco: {
-        rua: 'av brasil'
+        rua: 'av brasil',
+        numero: 557
     }
 }
+const {nome: n, sobrenome: s, ...resto} = pessoa
