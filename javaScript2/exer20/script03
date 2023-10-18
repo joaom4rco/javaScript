@@ -7,4 +7,9 @@ const pessoa = {
         numero: 557
     }
 }
-const {nome: n, sobrenome: s, ...resto} = pessoa
+const {nome: nm, sobrenome: s, idade:i ,
+     endereco:
+      {rua:r, numero:n}, ...resto
+    }= pessoa
+const idade = i * 2
+console.log(nm, s, i, r, n )
