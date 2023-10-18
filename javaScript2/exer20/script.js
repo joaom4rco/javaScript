@@ -1,6 +1,4 @@
-let a = 'a'
-let b = 'b'
-let c = 'c'
-const letras = [b,c,a];
-[a,b,c] = letras
-console.log(a,b,c)
+const numeros = [1000,1151,16262,62,62,65,5,96,2,232]
+const [num1,num2, ...resto] = numeros
+con
+console.log(resto)
