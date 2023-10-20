@@ -3,7 +3,7 @@ function random(min, max) {
     return Math.floor(r);
 }
 const min = 1;
-const max = 50;
+const max = 20;
 let rand = random(min, max);
 
 while (rand !== 10) {
