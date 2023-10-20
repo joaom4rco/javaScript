@@ -5,5 +5,5 @@ const nome = 'joao marco'
 // };
 
 for (let i in nome) {
-    console.log(i)
+    console.log(i, nome[i])
 }
