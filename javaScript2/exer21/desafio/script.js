@@ -1,8 +1,8 @@
 const elementos = [
     {tag: 'p', texto: 'frase 1'},
     {tag: 'div', texto: 'frase 2'},
-    {tag: 'div', texto: 'frase 3'},
-    {tag: 'div', texto: 'frase 4'},
+    {tag: 'footer', texto: 'frase 3'},
+    {tag: 'section', texto: 'frase 4'},
     
 ]
 const resultado = document.querySelector('.resultado')
