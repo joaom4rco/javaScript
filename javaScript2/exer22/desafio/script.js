@@ -8,4 +8,5 @@ console.log(backgroundBody)
 for (let p of ps) {
     p.style.background = backgroundBody
     p.style.color = 'white'
+    p.style.marginBottom = '20px'
 }
