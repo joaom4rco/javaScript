@@ -10,5 +10,5 @@ try {
     console.log(soma('5', 5))
 }catch (error) {
     // console.log(error)
-    console.log
+    console.log('deu error aqui viu negao')
 }
