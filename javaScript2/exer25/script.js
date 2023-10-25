@@ -1,10 +1,13 @@
 function mostraHora() {
-    let data = new Date()
+    let data = new Date('')
+
     return data.toLocaleDateString('pt-BR', {
         hour12: false
     })
 }
-function funcaoDoInterval() {
+const timer = setInterval(function(){
     console.log(mostraHora())
-}
-setInterval(funcaoDoInterval, 2000)
+}, 2000)
+setTimeout(function(){
+    clearInterval(timer)
+}, 5000)
