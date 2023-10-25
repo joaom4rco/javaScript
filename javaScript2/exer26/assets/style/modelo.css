@@ -25,7 +25,7 @@ body {
     margin-right: 100px;
 }
 .container h1 {
-    margin: 20px 0 30px; 
+    margin: 20px 0 10px; 
 }
 
 .container {
@@ -35,44 +35,14 @@ body {
     padding: 20px;
     border-radius: 10px;
 }
-.container-calc-imc {
+.relogio {
+    font-size: 2.8rem;
+}
+.container-button {
     display: flex;
-    flex-direction: column;
+    gap: 3px;
 }
-.container-calc-imc p {
-    font-weight:500;
-    margin-bottom: 10px;
-}
-input, label, button {
-    margin-bottom: 10px;
-}
-input{
-    font-size: 24px;
-    height: 50px;
-    padding: 0 20px;
-    width: 100%;
-}
-input:focus {
-    outline: 1px solid var(--primery-color);
-}
-button {
-    width: 100%;
-    border: transparent;
-    background-color: var(--primery-color);
-    color: #fff;
-    height: 50px;
+.container-button button {
     cursor: pointer;
-    margin-top: 30px;
-    font-weight: 700;
-    font-size: 0.7em;
-}
-button:hover {
-    background-color: var(--primery-color-dark);
-}
-.paragrafo-resultado .bad  {
-    background-color: rgb(160, 252, 160);
-    padding: 10px;
-}
-.bad {
-    background-color: rgb(255, 152, 152);
+    
 }
