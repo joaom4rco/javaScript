@@ -13,6 +13,12 @@ function novaData(data) {
         
     }) ;
 }
-
-const hora = novaData()
-console.log(hora)
+try {
+    const data = new Date('18-05-2000 12:50:20')
+    const hora = novaData()
+    console.log(hora)
+}catch (erro) {
+    //tratar erro
+}finally {
+    console.log('tenha um bom dia')
+}
