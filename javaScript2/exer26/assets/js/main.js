@@ -16,7 +16,11 @@ function data() {
         return `${hora}:0${min}:${seg}`
     }else if (seg < 10) {
         return `${hora}:${min}:0${seg}`
-    }else if (hora < 10 && min < 10 && seg < 10)
+    }else if (hora < 10 && min < 10 && seg < 10) {
+        return `0${hora}:0${min}:0${seg}`
+    }else {
+        return
+    }
 }
 iniciar.addEventListener('click', function(event) {
     relogio.innerHTML = 
