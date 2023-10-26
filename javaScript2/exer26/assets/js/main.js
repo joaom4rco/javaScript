@@ -10,20 +10,20 @@ function data() {
     let min = dataAtual.getHours()
     let hora = dataAtual.getMinutes()
     let seg = dataAtual.getSeconds()
-    if (hora <10) {
+    if (hora <10 && min >=10 && seg >= 10) {
         return `0${hora}:${min}:${seg}`
-    }else if(min < 10) {
+    }else if(min < 10 && hora >+ 10 && seg >= 10 ) {
         return `${hora}:0${min}:${seg}`
-    }else if (seg < 10) {
+    }else if (seg < 10 && hora >= 10 && min >= 10) {
         return `${hora}:${min}:0${seg}`
     }else if (hora < 10 && min < 10 && seg < 10) {
         return `0${hora}:0${min}:0${seg}`
     }else {
-        return
+        return `${hora}:${min}:${seg}`
     }
 }
 iniciar.addEventListener('click', function(event) {
-    relogio.innerHTML = 
+    relogio.innerHTML = data()
     relogio.style.color = 'black'
 })
 pausar.addEventListener('click', function(event) {
