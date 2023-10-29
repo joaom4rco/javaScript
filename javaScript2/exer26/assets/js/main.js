@@ -32,4 +32,3 @@ zerar.addEventListener('click',function(event) {
     segundos = 0
     relogio.style.color = 'black'
 })
-
