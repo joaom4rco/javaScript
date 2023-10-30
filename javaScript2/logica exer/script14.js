@@ -7,6 +7,7 @@ function salaMensal() {
     const novoSalario = salario + reajusteSalarial
     const porcentagemSalarial = (reajusteSalarial * 100/salario).toFixed(2)
     fernando.novoSalario = novoSalario
-    console.log(porcentagemSalarial)
+    fernando.porcentagemSalarial = porcentagemSalarial + '%'
+    console.log(fernando)
 }
 salaMensal()
