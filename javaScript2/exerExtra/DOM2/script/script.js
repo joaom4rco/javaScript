@@ -19,10 +19,21 @@ form.addEventListener('submit', function(e){
         mensagem('nao consigo fazer a conta', false)
         return;
     }
-    if (calcImc < 18,5) {
-        mensagem(`o seu imc é de ${calcImc.toFixed(2)} e você está abaixo do peso, CUIDADO!`)
-    }else if (calcImc >= 18,5 && calcImc <= 24,9) {
-        mensagem(`o seu imc é de ${calcImc.toFixed(2)} você está no peso normal`)
+    if (calcImc < 18.5) {
+        mensagem(`o seu imc é de ${calcImc.toFixed(2)} voce está abaixo do peso` )
+    }else if (calcImc >= 18.5 && calcImc <= 24.9 ) {
+        mensagem(`o seu imc é de ${calcImc.toFixed(2)} voce está no peso normal` )
+        
+    }else if (calcImc >= 25 && calcImc <= 29.9) {
+        mensagem(`o seu imc é de ${calcImc.toFixed(2)} voce está com Sobrepeso`)
+    }else if (calcImc >= 30 && calcImc <=34.9) {
+        mensagem(`o seu imc é de ${calcImc.toFixed(2)} voce está com Obesidade grau 1`)
+    }else if (calcImc >= 35 && calcImc <= 39.9) {
+        mensagem(`o seu imc é de ${calcImc.toFixed(2)} voce está com Obesidade grau 2`)
+    }else if (calcImc >= 40 && calcImc <= 59.9) {
+        mensagem(`o seu imc é de ${calcImc.toFixed(2)} voce está com Obesidade grau 3`)
+    }else if (calcImc >= 60) {
+        mensagem(`o seu imc é de ${calcImc.toFixed(2)} como voce está vivo??`)
     }
 })
 function criarP() {
