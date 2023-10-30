@@ -1,13 +1,17 @@
-function salaMensal() {
+function salarioMensal() {
     const fernando = {
-        salario: 3000
+        salario: 3500
     }
     const {salario} = fernando
-    const reajusteSalarial = 100
-    const novoSalario = salario + reajusteSalarial
-    const porcentagemSalarial = (reajusteSalarial * 100/salario).toFixed(2)
+    const reajusteSalarial = 50
+    
+    
+    const aumento = Number((reajusteSalarial * salario/100).toFixed(2))
+    
+    const novoSalario = salario + aumento
+
     fernando.novoSalario = novoSalario
-    fernando.porcentagemSalarial = porcentagemSalarial + '%'
+    fernando.aumentoSalarial = aumento + 'R$'
     console.log(fernando)
 }
-salaMensal()
+salarioMensal()
