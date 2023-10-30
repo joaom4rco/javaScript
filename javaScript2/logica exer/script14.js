@@ -3,8 +3,8 @@ function salarioMensal() {
         salario: 3500
     }
     const {salario} = fernando
+
     const reajusteSalarial = 50
-    
     
     const aumento = Number((reajusteSalarial * salario/100).toFixed(2))
     
