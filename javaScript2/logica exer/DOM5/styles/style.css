@@ -35,13 +35,9 @@ body {
     padding: 20px;
     border-radius: 10px;
 }
-.container-calc-imc {
+.container-botao {
     display: flex;
-    flex-direction: column;
-}
-.container-calc-imc p {
-    font-weight:500;
-    margin-bottom: 10px;
+    gap: 20px;
 }
 input, label, button {
     margin-bottom: 10px;
@@ -50,7 +46,7 @@ input{
     font-size: 24px;
     height: 50px;
     padding: 0 20px;
-    width: 100%;
+    gap: 20px;
 }
 input:focus {
     outline: 1px solid var(--primery-color);
@@ -74,5 +70,5 @@ button:hover {
     padding: 10px;
 }
 .bad {
-    background-color: rgb(255, 152, 152);
+    background-color: red !important;
 }
