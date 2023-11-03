@@ -1,32 +1,78 @@
-const dataHojeTexto = document.querySelector('.container h1');
-function dia(diaSemana) {
+function getDiaSemanaTexto(diaSemana) {
     let diaSemanaTexto;
-    switch ( diaSemana) {
+    switch (diaSemana) {
         case 0:
-            diaSemanaTexto.innerHTML = 'Domingo'
+            diaSemanaTexto = 'Domingo'
             return diaSemanaTexto;
         case 1:
-            diaSemanaTexto.innerHTML = 'segunda-feira'
+            diaSemanaTexto = 'segunda-feira'
             return diaSemanaTexto;
         case 2:
-            diaSemanaTexto.innerHTML = 'terça-feira'
+            diaSemanaTexto = 'terça-feira'
             return diaSemanaTexto;
         case 3:
-            diaSemanaTexto.innerHTML = 'quarta-feira'
+            diaSemanaTexto = 'quarta-feira'
             return diaSemanaTexto;
         case 4:
-            diaSemanaTexto.innerHTML = 'Quinta-feira'
+            diaSemanaTexto = 'Quinta-feira'
             return diaSemanaTexto;
         case 5:
-            diaSemanaTexto.innerHTML = 'Sexta-feira'
+            diaSemanaTexto = 'Sexta-feira'
             return diaSemanaTexto;
         case 7:
-            diaSemanaTexto.innerHTML = 'sabado'
+            diaSemanaTexto = 'sabado'
             return diaSemanaTexto;
     }
 }
-
+function getMesTexto(mes) {
+    let diaMesTexto;
+    switch (mes) {
+        case 1:
+            diaMesTexto = 'Janeiro'
+            return diaMesTexto;
+        case 2:
+            diaMesTexto = 'Janeiro'
+            return diaMesTexto;
+        case 2:
+            diaMesTexto = 'Janeiro'
+            return diaMesTexto;
+        case 1:
+            diaMesTexto = 'Janeiro'
+            return diaMesTexto;
+        case 1:
+            diaMesTexto = 'Janeiro'
+            return diaMesTexto;
+        case 1:
+            diaMesTexto = 'Janeiro'
+            return diaMesTexto;
+        case 1:
+            diaMesTexto = 'Janeiro'
+            return diaMesTexto;
+        case 1:
+            diaMesTexto = 'Janeiro'
+            return diaMesTexto;
+        case 1:
+            diaMesTexto = 'Janeiro'
+            return diaMesTexto;
+        case 1:
+            diaMesTexto = 'Janeiro'
+            return diaMesTexto;
+        case 1:
+            diaMesTexto = 'Janeiro'
+            return diaMesTexto;
+            
+    }
+}
+const dataHojeTexto = document.querySelector('.data-hoje')
 const dataHj = new Date();
 
-const diaSemana = data.getDay();
-const diaSemanaTexto = dia(diaSemana);
+const diaSemana = dataHj.getDay();
+const diaSemanaTexto = getDiaSemanaTexto(diaSemana);
+
+const diaMes = dataHj.getDate()
+
+const Mes = dataHj.getMonth() + 1 
+const diaMesTexto = getMesTexto(mes)
+
+
+dataHojeTexto.innerHTML = `${diaSemanaTexto}, ${diaMes}`
