@@ -10,6 +10,8 @@ const div = document.createElement('div');
 for (let i = 0; i < elementos.length; i++) {
     let {tag, texto} = elementos[i];
     let criaTag = document.createElement(tag)
-    let textoCriado = document.createElement(texto)
+    let textoCriado = document.createTextNode(texto)
     criaTag.appendChild(textoCriado)
+    div.appendChild(criaTag)
 }
+resultado.appendChild(div)
