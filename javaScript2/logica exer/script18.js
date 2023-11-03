@@ -1,8 +1,8 @@
 function numMaior (x,y) {
     if (x > y) {
-        console.log(x)
+        console.log(`${x} é maior que ${y}`)
     }else if (y > x) {
-        console.log(y)
+        console.log(`${y} é maior que ${x}`)
     } else {
         console.log(`números iguais, ${x, y}`)
     }
