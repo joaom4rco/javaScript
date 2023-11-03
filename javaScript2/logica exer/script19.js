@@ -1,2 +1,2 @@
-function ePaisagem(x,y) {x > y ? console.log('true'): console.log('false')}
-const medidas = ePaisagem(600, 300)
+function ePaisagem(largura,altura) { return largura > altura }
+console.log(ePaisagem(1080, 2020))
