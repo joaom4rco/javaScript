@@ -14,11 +14,14 @@
 // const num = numMaior(x,y)
 
 
+
+
 // com 4 linhas de código
 // function numMaior (x,y) {x > y ? console.log(`${x} é maior que ${y}`) : console.log(`${y} é maior que ${x}`)}
 // const x = 10
 // // const y = 50
 // const num = numMaior(x,y)
+
 
 
 
