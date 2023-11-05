@@ -33,6 +33,7 @@ function criarTarefa(textoInput) {
     tarefas.appendChild(li)
     limpaTarefa()
     criarBotaoApagar (li)
+    salvarTarefas()
 }
 
 btnTarefa.addEventListener('click', (e) =>{
@@ -40,6 +41,14 @@ btnTarefa.addEventListener('click', (e) =>{
 
      criarTarefa(inputTarefa.value)
 })
+function salvarTarefas() {
+    const liTarefas = tarefas.querySelectorAll('li')
+    const listaDeTarefas = []
+
+    for (let tarefa of liTarefas) {
+        let
+    }
+}
 document.addEventListener('click', (e) => {
     const el = e.target
     if (el.classList.contains('apagar') ) {
