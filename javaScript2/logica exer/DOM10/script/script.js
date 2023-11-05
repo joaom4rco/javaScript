@@ -15,5 +15,20 @@ function iniciaRelogio() {
     timer = setInterval(function() {
         segundos++
         relogio.innerHTML = criarHoraDosSegundos(segundos)
-    })
+    }, 1000)
 }
+iniciar.addEventListener('click', (e) =>{
+    clearInterval(timer)
+    iniciaRelogio()
+    relogio.style.color = 'black'
+})
+pausar.addEventListener('click', (e) =>{
+    clearInterval(timer)
+    relogio.style.color = 'red'
+})
+zerar.addEventListener('click', (e) => {
+    clearInterval(timer)
+    relogio.innerHTML = '00:00:00'
+    segundos = 0
+    relogio.style.color = 'black'
+})
