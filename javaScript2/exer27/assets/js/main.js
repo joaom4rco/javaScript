@@ -46,8 +46,11 @@ function salvarTarefas() {
     const listaDeTarefas = []
 
     for (let tarefa of liTarefas) {
-        let
+        let tarefaTexto = tarefa.innerText
+        tarefaTexto = tarefaTexto.replace('apagar', ' ')
+        listaDeTarefas.push(tarefaTexto)
     }
+    console.log(listaDeTarefas)
 }
 document.addEventListener('click', (e) => {
     const el = e.target
