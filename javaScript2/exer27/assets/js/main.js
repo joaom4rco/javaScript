@@ -27,7 +27,6 @@ function criarBotaoApagar (li) {
     li.appendChild(botaoApagar)
 }
 function criarTarefa(textoInput) {
-    console.log(textoInput)
     const li = criaLi()
     li.innerText = textoInput
     tarefas.appendChild(li)
@@ -50,7 +49,9 @@ function salvarTarefas() {
         tarefaTexto = tarefaTexto.replace('apagar', ' ')
         listaDeTarefas.push(tarefaTexto)
     }
-    console.log(listaDeTarefas)
+
+    const tarefasJson = JSON.stringify(listaDeTarefas)
+    console.log(tarefasJson)
 }
 document.addEventListener('click', (e) => {
     const el = e.target
