@@ -51,8 +51,18 @@ function salvarTarefas() {
     }
 
     const tarefasJson = JSON.stringify(listaDeTarefas)
+    localStorage.setItem('tarefas', tarefasJson)
     console.log(tarefasJson)
 }
+function adicionaTarefasSalvas() {
+    const tarefas = localStorage.getItem('tarefas')
+    const listaDeTarefas = JSON.parse(tarefas)
+
+    for (let tarefa of listaDeTarefas) {
+        criarTarefa(tarefa)
+    }
+}
+adicionaTarefasSalvas()
 document.addEventListener('click', (e) => {
     const el = e.target
     if (el.classList.contains('apagar') ) {
