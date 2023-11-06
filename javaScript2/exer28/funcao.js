@@ -14,3 +14,11 @@ const falaArrow = () => {
 }
 falaArrow()
 
+// funcao em objetos
+
+const obj = {
+    fala() {
+        console.log('sou uma funcao em um objeto')
+    }
+}
+obj.fala()
