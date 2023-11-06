@@ -1,3 +1,9 @@
+// function hoisting
+falaoi() 
+function falaoi() {
+    console.log('oii')
+}
+
 // first-class objects 
 const falaOi = function() {
     console.log('oi')
