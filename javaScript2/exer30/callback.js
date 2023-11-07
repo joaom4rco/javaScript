@@ -2,21 +2,32 @@ function rand(min = 1000, max = 3000) {
     const num = Math.random() * (min + max) - min
     return Math.floor(num)
 }
-function fala() {
+function fala(callback) {
     setTimeout(function(){
         console.log('messi')
+        if(callback) callback()
     }, rand())
 }
-function fala2() {
+function fala2(callback) {
     setTimeout(function(){
         console.log('ronaldo')
+        if(callback) callback()
     }, rand())
 }
-function fala3() {
+function fala3(callback) {
     setTimeout(function(){
         console.log('neymar')
+        if(callback) callback()
     }, rand())
 }
-fala()
-fala2()
-fala3()
+fala(falacallback)
+
+function falacallback() {
+    fala2(fala2callback)
+}
+function fala2callback() {
+    fala3(fala3callback)
+}
+function fala3callback() {
+    console.log('o melhor do mundo é o ')
+}
