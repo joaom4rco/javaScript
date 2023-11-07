@@ -1,13 +1,14 @@
+const fontButton1 = document.querySelector('#size-button1')
+const fontButton2 = document.querySelector('#size-button2')
+const fontButton3 = document.querySelector('#size-button3')
 
-function makeSize(size) {
-    return function() {
-        document.body.style.fontSize = size + 'px'
-    }
-}
-let fSize12 = makeSize(20)
-let fSize14 = makeSize(64)
-let fSize16 = makeSize(30)
-
-document.querySelector('#size-12').onclick = fSize12
-document.querySelector('#size-14').onclick = fSize14
-document.querySelector('#size-16').onclick = fSize16
+const button = document.querySelector('#button')
+button.addEventListener('click',() =>  {
+    fontButton1.style.fontSize = 30 +'px'
+})
+button.addEventListener('click',() =>  {
+    fontButton2.style.color = 'red'
+})
+button.addEventListener('click',() =>  {
+    fontButton3.style.backgroundColor = 'black'
+})
