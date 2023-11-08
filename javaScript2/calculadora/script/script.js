@@ -1,17 +1,21 @@
 function criaCalculadora() {
     return {
+
         display: document.querySelector('.display'),
+        
         inicia() {
             this.cliqueBotoes()
             this.cliqueBotoesEnter()
         },
+
         clear() {
             this.display.value = '';
         },
+        
         displayDel() {
             this.display.value = this.display.value.slice(0, -1)
         },
-        
+
         displayIgual() {
             let conta = this.display.value
             
