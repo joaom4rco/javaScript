@@ -1,5 +1,6 @@
 (function(idade, peso ){
     const sobrenome = 'santos'
+    
     function criaNome (nome) {
         return nome + ' ' + sobrenome
     }
@@ -7,7 +8,10 @@
         return criaNome('joao')
     }
     function falaIdade() {
-        return falaNome() + ' ' + idade
+        return falaNome() + ' ' + idade +' ' + 'anos'
     }
-    falaIdade()
-})(18)
+    function falaPeso() {
+        console.log(falaIdade() + ' ' + peso + ' ' + 'kg')
+    }
+    falaPeso()
+})(18, 80)
