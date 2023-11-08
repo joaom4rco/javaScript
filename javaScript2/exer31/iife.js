@@ -1,6 +1,6 @@
 (function(idade, peso ){
     const sobrenome = 'santos'
-    
+
     function criaNome (nome) {
         return nome + ' ' + sobrenome
     }
