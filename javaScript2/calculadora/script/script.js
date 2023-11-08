@@ -11,6 +11,7 @@ function criaCalculadora() {
         displayDel() {
             this.display.value = this.display.value.slice(0, -1)
         },
+        
         displayIgual() {
             let conta = this.display.value
             
@@ -26,6 +27,7 @@ function criaCalculadora() {
                 return
             }
         },
+        
         cliqueBotoesEnter() {
             this.display.addEventListener('keypress', e => {
                 if(e.keyCode === 13) {
@@ -33,6 +35,7 @@ function criaCalculadora() {
                 }
             })
         },
+
         cliqueBotoes() {
             document.addEventListener('click', (e) => {
                 const el = e.target
@@ -51,6 +54,7 @@ function criaCalculadora() {
                 }
             })
         },
+
             botaoItemDisplay(valor) {
                 this.display.value += valor
             }
