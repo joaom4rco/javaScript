@@ -25,7 +25,8 @@ body {
     margin-right: 100px;
 }
 .container h1 {
-    margin: 20px 0 30px; 
+    margin: 20px 0px 30px 2cap; 
+    
 }
 
 .container {
@@ -60,7 +61,7 @@ button {
     color: #fff;
     height: 50px;
     cursor: pointer;
-    margin: 10px 0 5px;
+    margin-top: 2px;
     font-weight: 700;
     font-size: 0.7em;
 }
@@ -76,4 +77,9 @@ button:hover {
 }
 .calculadora {
     width: 400px;
+}
+.display {
+    height: 60px;
+    text-align: right;
+    font-size: 1.5em;
 }
