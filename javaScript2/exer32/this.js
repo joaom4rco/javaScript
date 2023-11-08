@@ -15,7 +15,7 @@ function criarpessoa(nome, sobrenome, altura, peso) {
     altura,
     peso,
 
-    get imc() {
+    get const imc() {
         const contaImc = this.peso / (this.altura**this.altura)
         return contaImc.toFixed(2)
     }
