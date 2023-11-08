@@ -14,20 +14,15 @@ function fala2(callback) {
         if(callback) callback()
     }, rand())
 }
-function fala3(callback) {
-    setTimeout(function(){
-        console.log('neymar')
-        if(callback) callback()
-    }, rand())
-}
+// function fala3(callback) {
+//     setTimeout(function(){
+//         console.log('neymar')
+//         if(callback) callback()
+//     }, rand())
+// }
 fala(falacallback)
 
 function falacallback() {
     fala2(fala2callback)
 }
-function fala2callback() {
-    fala3(fala3callback)
-}
-function fala3callback() {
-    console.log('o melhor do mundo é o ')
-}
+const fala2callback = () => {}
