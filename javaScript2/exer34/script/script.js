@@ -7,6 +7,9 @@ function CriarCalculadora() {
     this.displayClear = () => {
         this.display.value = ' '
     }
+    this.displayDel = () => {
+        this.display.value = this.display.value.slice(0, -1)
+    }
     this.cliqueBotoes = function() {
         const documento = document.addEventListener('click', e => {
             const el = e.target
@@ -18,6 +21,9 @@ function CriarCalculadora() {
             };
             if (el.classList.contains('btn-del')) {
                 this.displayDel()
+            }
+            if (el.classList.contains('btn-eq')) {
+                this.displayResultado()
             }
         })
         return documento
