@@ -31,10 +31,9 @@ function CriarCalculadora() {
 
             this.display.value = conta
         } catch (error) {
-            if(!conta) {
-                alert('conta invalida')
-                return
-            }
+            alert('conta invalida')
+            return
+            
         }
     }
     this.cliqueBotoes = () => {
@@ -56,6 +55,7 @@ function CriarCalculadora() {
     };
     this.btnParaDisplay = (valor) => {
         this.display.value += valor
+        this.display.focus()
     }
 }
 const calculadora = new CriarCalculadora()
