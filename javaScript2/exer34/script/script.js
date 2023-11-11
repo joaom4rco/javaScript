@@ -10,7 +10,25 @@ function CriarCalculadora() {
     this.displayDel = () => {
         this.display.value = this.display.value.slice(0, -1)
     }
-    this.cliqueBotoes = function() {
+    this.displayResultado = () => {
+        let conta = this.display.value
+        try {
+            conta = eval(conta) 
+
+            if(!conta) {
+                alert('conta invalida')
+                return
+            }
+
+            this.display.value = conta
+        } catch (error) {
+            if(!conta) {
+                alert('conta invalida')
+                return
+            }
+        }
+    }
+    this.cliqueBotoes = () => {
         const documento = document.addEventListener('click', e => {
             const el = e.target
             if (el.classList.contains('btn-num')) {
