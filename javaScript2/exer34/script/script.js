@@ -3,12 +3,21 @@ function CriarCalculadora() {
 
     this.inicia = () => {
         this.cliqueBotoes()
+        this.pressEnter()
     };
     this.displayClear = () => {
         this.display.value = ' '
     }
     this.displayDel = () => {
         this.display.value = this.display.value.slice(0, -1)
+    }
+
+    this.pressEnter = () => {
+        document.addEventListener('keypress', e => {
+            if(e.keyCode === 13 ) {
+                this.displayResultado()
+            }
+        })
     }
     this.displayResultado = () => {
         let conta = this.display.value
@@ -29,7 +38,7 @@ function CriarCalculadora() {
         }
     }
     this.cliqueBotoes = () => {
-        const documento = document.addEventListener('click', e => {
+        document.addEventListener('click', e => {
             const el = e.target
             if (el.classList.contains('btn-num')) {
                 this.btnParaDisplay(el.innerText)
@@ -44,7 +53,6 @@ function CriarCalculadora() {
                 this.displayResultado()
             }
         })
-        return documento
     };
     this.btnParaDisplay = (valor) => {
         this.display.value += valor
