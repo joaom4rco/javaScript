@@ -36,3 +36,20 @@
 // console.log(g3.next().value)
 // console.log(g3.next().value)
 // console.log(g3.next().value)
+
+function* geradora() {
+    yield 1
+    yield 2
+    yield 3
+}
+function* geradora2() {
+    yield* geradora()
+
+    yield 4
+    yield 5
+    yield 6
+}
+const gera = geradora2()
+for (let gerando of gera) {
+    console.log(gerando)
+}
