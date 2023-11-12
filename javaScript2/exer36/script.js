@@ -4,4 +4,6 @@ function* geradora() {
     yield 'valor 3'
 }
 const g1 = geradora()
-console.log(g1.next())
+console.log(g1.next().value)
+console.log(g1.next().value)
+console.log(g1.next().value)
