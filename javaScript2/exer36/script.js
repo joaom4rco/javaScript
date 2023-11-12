@@ -37,19 +37,20 @@
 // console.log(g3.next().value)
 // console.log(g3.next().value)
 
-function* geradora() {
-    yield 1
-    yield 2
-    yield 3
-}
-function* geradora2() {
-    yield* geradora()
+// 
 
-    yield 4
-    yield 5
-    yield 6
+function* geradora() {
+    yield function() {
+        console.log('ola mundo')
+    }
+
+    yield function() {
+        console.log('oiiii')
+    }
 }
-const gera = geradora2()
-for (let gerando of gera) {
-    console.log(gerando)
-}
+
+const gera = geradora()
+const fala = gera.next().value
+const fala2 = gera.next().value
+fala()
+fala2()
