@@ -10,7 +10,8 @@
 // const novo = nomes.pop()
 // console.log(nomes, novo)
 
-// copia
+// cópia do array
 const nomes = ['eduardo','maria','antonio']
-const novo = nomes.pop()
+const novo = [... nomes]
+novo.pop()
 console.log(nomes, novo)
