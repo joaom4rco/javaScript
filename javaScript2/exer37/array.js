@@ -11,7 +11,15 @@
 // console.log(nomes, novo)
 
 // cópia do array
-const nomes = ['eduardo','maria','antonio']
-const novo = [... nomes]
-novo.pop()
-console.log(nomes, novo)
+// const nomes = ['eduardo','maria','antonio']
+// const novo = [... nomes]
+// novo.pop()
+// novo.shift()
+// console.log(novo)
+
+
+// adicionando coisas no final  e no começo do array
+// const nomes = ['eduardo','maria','antonio']
+// nomes.push('antonieta')
+// nomes.unshift('antonieta')
+// console.log(nomes)
