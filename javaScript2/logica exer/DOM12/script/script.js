@@ -1,11 +1,14 @@
-const fontButton1 = document.querySelector('#size-button1')
-const fontButton2 = document.querySelector('#size-button2')
-const fontButton3 = document.querySelector('#size-button3')
-
-const button = document.querySelector('#button')
-
-button.addEventListener('click',() =>  {
-    fontButton1.style.fontSize = 30 +'px'
-    fontButton2.style.color = 'red'
-    fontButton3.style.backgroundColor = 'black'
-})
+function numero(number) {
+    const arr = [ ]
+    for(let num of number) {
+        if(num % 3 === 0 || num % 5 ===0 ) {
+            arr.push(num)
+        }
+    }
+        const conta = arr.reduce((ac, valor) =>{
+            return ac + valor 
+        },0 )
+        console.log(conta);
+}
+const number = [1,2,3,4,5,6,7,8,9]
+const num = numero(number)

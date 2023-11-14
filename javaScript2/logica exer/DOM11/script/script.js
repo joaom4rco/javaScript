@@ -5,10 +5,6 @@ const fontButton3 = document.querySelector('#size-button3')
 const button = document.querySelector('#button')
 button.addEventListener('click',() =>  {
     fontButton1.style.fontSize = 30 +'px'
-})
-button.addEventListener('click',() =>  {
     fontButton2.style.color = 'red'
-})
-button.addEventListener('click',() =>  {
     fontButton3.style.backgroundColor = 'black'
 })
