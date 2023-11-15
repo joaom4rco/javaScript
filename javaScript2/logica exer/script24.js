@@ -31,8 +31,7 @@ function Cliente() {
             const debito = Math.random() * (999-0) +50
             return  Math.floor(debito)
         },
-    };
-      
+    };     
 };
 const novoCliente = Cliente();
 novoCliente.infoCliente();
