@@ -20,19 +20,19 @@ function Cliente() {
             }
         },
         saldoCliente() {
-            const saldo = Math.random() * (999-0 )+100
+            const saldo = Math.random() * (999-0 )+50
             return Math.floor(saldo) 
         },
         creditoCliente() {
-            const credito = Math.random() * (200-0) +50
+            const credito = Math.random() * (200-0) +20
             return Math.floor(credito)
         },
         debitoCliente() {
-            const credito = Math.random() * (999-0) +80
-            return  Math.floor(credito)
+            const debito = Math.random() * (999-0) +50
+            return  Math.floor(debito)
         },
-    }
+    };
       
-}
-const novoCliente = Cliente()
-novoCliente.infoCliente()
+};
+const novoCliente = Cliente();
+novoCliente.infoCliente();
