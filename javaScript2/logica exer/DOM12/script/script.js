@@ -1,14 +1,19 @@
-function numero(number) {
-    const arr = [ ]
-    for(let num of number) {
-        if(num % 3 === 0 || num % 5 ===0 ) {
-            arr.push(num)
+function inputNum() {
+    return {
+        fnum: document.querySelector('#fnum'),
+        contar:document.querySelector('#fcontar'),
+
+        valor() {
+            this.botao()
+        },
+        
+        botao() {
+            this.contar.addEventListener('click', e =>{
+                const valorInput = this.fnum.value
+                console.log(valorInput)
+            })
         }
     }
-        const conta = arr.reduce((ac, valor) =>{
-            return ac + valor 
-        },0 )
-        console.log(conta);
 }
-const number = [1,2,3,4,5,6,7,8,9]
-const num = numero(number)
+const input = inputNum()
+input.valor()
