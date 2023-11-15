@@ -2,6 +2,7 @@ function inputNum() {
     return {
         fnum: document.querySelector('#fnum'),
         contar:document.querySelector('#fcontar'),
+        resultado: document.querySelector('#resultado'),
 
         valor() {
             this.botao()
@@ -9,9 +10,15 @@ function inputNum() {
         
         botao() {
             this.contar.addEventListener('click', e =>{
-                const valorInput = this.fnum.value
-                console.log(valorInput)
+                this.forInput()
             })
+        },
+
+        forInput() {
+            const valorInput = this.fnum.value
+            for(let i = 0; i <= valorInput; i++ ) {
+                this.resultado.innerHTML = i
+            }
         }
     }
 }
