@@ -17,7 +17,7 @@ function inputNum() {
         forInput() {
             const valorInput = this.fnum.value
             for(let i = 0; i <= valorInput; i++ ) {
-                this.resultado.innerHTML = i
+                this.resultado.innerHTML += i
             }
         }
     }
