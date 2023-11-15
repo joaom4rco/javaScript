@@ -6,11 +6,18 @@ function Cliente() {
         },
         numeroConta() {
         const contaCliente = Math.random() * (999 - 100) + 100
-        console.log(Math.floor(contaCliente)) 
+        console.log('o número da sua conta é:' + Math.floor(contaCliente)) 
         },
         conta() {
             const conta = this.saldoCliente() + this.creditoCliente() - this.debitoCliente()
-            console.log(conta)
+            console.log('o saldo da sua conta é de:'+ conta)
+            if(conta > 0) {
+                console.log('seu saldo é positivo')
+            }else if(conta < 0) {
+                console.log('seu saldo é negativo')
+            }else {
+                console.log('seu saldo está zerado')
+            }
         },
         saldoCliente() {
             const saldo = Math.random() * (999-0 )+100
