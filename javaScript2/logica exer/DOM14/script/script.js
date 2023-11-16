@@ -9,14 +9,13 @@ function validaSenha() {
                 
                 if(senhaUsuario.length >= 8 &&/[A-Z]/.test(senhaUsuario) && /\W|_/.test(senhaUsuario) &&/[a-z]/.test(senhaUsuario)){
                     alert('voce foi cadastrado')
+                    this.inputSenha.value = ''
                 } else {
                     e.preventDefault()
-                    alert('siga o exemplo de senha a seguir')
-                    const alerta = document.getElementById('alerta').onclick
-                    alert(alerta)
+                    alert('A senha deve ter pelo menos 8 caracteres, incluir pelo menos uma letra maiúscula, uma letra minúscula e um caractere especial.')
                 }
                 console.log(senhaUsuario)
-                this.inputSenha.value = ''
+                
             }) 
         }
     }
