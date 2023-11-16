@@ -10,7 +10,10 @@ function validaSenha() {
                 if(senhaUsuario.length >= 8 &&/[A-Z]/.test(senhaUsuario) && /\W|_/.test(senhaUsuario) &&/[a-z]/.test(senhaUsuario)){
                     alert('voce foi cadastrado')
                 } else {
-                    
+                    e.preventDefault()
+                    alert('siga o exemplo de senha a seguir')
+                    const alerta = document.getElementById('alerta').onclick
+                    alert(alerta)
                 }
                 console.log(senhaUsuario)
                 this.inputSenha.value = ''
