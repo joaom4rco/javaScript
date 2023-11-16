@@ -37,17 +37,7 @@ input, label, button {
 input:focus {
     outline: 1px solid var(--primery-color);
 }
-button {
-    width: 100%;
-    border: transparent;
-    background-color: var(--primery-color);
-    color: #fff;
-    height: 50px;
-    cursor: pointer;
-    margin-top: 30px;
-    font-weight: 700;
-    font-size: 0.7em;
-}
+
 button:hover {
     background-color: var(--primery-color-dark);
 }

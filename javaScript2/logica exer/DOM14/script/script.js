@@ -1,12 +1,10 @@
-function num() {
-       for (let i = 1; i <= 10; i++) {
-        console.log(i)
-       }
-}
-function num2() {
-    for (let i = 10; i >= 1; i--) {
-     console.log(i)
+function validaSenha() {
+    return {
+        inputSenha: document.querySelector('#isenha'),
+        botaoSenha: document.querySelector('#button-Senha'),
+        
+        senha() {
+
+        }
     }
 }
-num()
-num2()
