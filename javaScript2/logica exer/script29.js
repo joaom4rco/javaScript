@@ -8,4 +8,4 @@ function tabelaMatematica() {
     }
 }
 const tabela = tabelaMatematica()
-tabela.tabuada(2)
+tabela.tabuada(9)
