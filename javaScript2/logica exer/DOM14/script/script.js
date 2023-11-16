@@ -6,10 +6,13 @@ function validaSenha() {
             this.botaoSenha.addEventListener('click', e => {
                 const senhaUsuario = this.inputSenha.value
 
-                const arraySenha = []
-                arraySenha.push(senhaUsuario)
-                if(arraySenha.length > 8 && arraySenha.some(palavra => /(A - Z))) 
-
+                
+                if(senhaUsuario.length >= 8 &&/[A-Z]/.test(senhaUsuario) && /\W|_/.test(senhaUsuario) &&/[a-z]/.test(senhaUsuario)){
+                    alert('voce foi cadastrado')
+                } else {
+                    
+                }
+                console.log(senhaUsuario)
                 this.inputSenha.value = ''
             }) 
         }
