@@ -8,8 +8,7 @@ function validaSenha() {
 
                 const arraySenha = []
                 arraySenha.push(senhaUsuario)
-                
-                console.log(arraySenha);
+                if(arraySenha.length > 8 && arraySenha.some(palavra => /(A - Z))) 
 
                 this.inputSenha.value = ''
             }) 
