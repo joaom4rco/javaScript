@@ -8,5 +8,5 @@ function temperatura(temperatura) {
         }
     }
 }
-const temperaturaCelsius = temperatura(50)
+const temperaturaCelsius = temperatura(20)
 temperaturaCelsius.temperaturaFahrenheit()
