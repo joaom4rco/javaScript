@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+:root {
+    --primery-color:rgb(106, 169, 196);
+    --primery-color-dark:rgb(70, 129, 154);
+    --font-padrao:'Open Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+table td,th{
+    border: 1px solid black;
+    text-align: center;
+}
