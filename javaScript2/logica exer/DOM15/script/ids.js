@@ -7,13 +7,3 @@ const derrotas = document.querySelector('#derrotas')
 const golsFeitos = document.querySelector('#gols-pro')
 const saldoDeGols = document.querySelector('#saldo-de-gols')
 const ultimasPartidas = document.querySelector('#ultimas-partidas')
-const inputTime1 = document.querySelector('#itime')
-const inputTime2 = document.querySelector('#itime2')
-const button = document.querySelector('#button')
-function brasileirao() {
-    return {
-        partidas() {
-            
-        }
-    }
-}
