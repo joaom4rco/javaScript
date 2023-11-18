@@ -10,7 +10,7 @@ function notasSemestre(n1,n2,n3,n4) {
         mediaAluno() {
             const media = this.notas().reduce((c ,v) => {
                 return c + v 
-            }, 0) / this.notas.length()
+            }, 0) / this.notas().length()
             console.log(media)
         }
     }
