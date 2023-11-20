@@ -79,8 +79,8 @@ function brasileirao() {
             const gols = []
             gols.push(this.time1.value) 
             const arrayGols = gols.reduce((c,v) => {
-                 console.log(Number(c +v))
-            })
+                console.log(Number(c) + Number(v))
+            },0)
             console.log(arrayGols)
         }
     }
