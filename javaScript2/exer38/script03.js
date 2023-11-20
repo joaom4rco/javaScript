@@ -1,14 +1,21 @@
 function Produto(nome, venda, estoque) {
     this.nome = nome;
     this.venda = venda
-    let
+    let estoquePrivado = estoque
     Object.defineProperty(this, 'estoque', {
         value: estoque, 
         writable:true,
         enumerable:true,
         configurable:false,
         get: () =>{
-            return estoque
+            return estoquePrivado;
+        },
+        set: valor => {
+            if(typeof valor !== 'number') {
+                throw new console.error('error, só aceitamos numeros inteiros'); 
+            }
+
+            estoquePrivado = valor
         }
     })
 }
