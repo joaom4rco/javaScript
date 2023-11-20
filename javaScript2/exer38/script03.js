@@ -10,7 +10,8 @@ function Produto(nome, venda, estoque) {
         },
         set: valor => {
             if(typeof valor !== 'number') {
-                throw new console.error('error, só aceitamos numeros inteiros'); 
+                let error = 'o erro está no valor do estoque'
+                throw new TypeError(error,' só aceitamos numeros inteiros'); 
             }
 
             estoquePrivado = valor
@@ -18,4 +19,5 @@ function Produto(nome, venda, estoque) {
     })
 }
 const produto1 = new Produto('camiseta', 50, 8)
+produto1.estoque = 'fefefe'
 console.log(produto1)
