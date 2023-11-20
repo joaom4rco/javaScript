@@ -2,9 +2,7 @@ function Produto(nome, venda, estoque) {
     this.nome = nome;
     this.venda = venda
     let estoquePrivado = estoque
-    Object.defineProperty(this, 'estoque', {
-        value: estoque, 
-        writable:true,
+    Object.defineProperty(this, 'estoque', { 
         enumerable:true,
         configurable:false,
         get: () =>{
