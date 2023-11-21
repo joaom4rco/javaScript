@@ -3,4 +3,9 @@ function Produto(nome, preco, estoque) {
     this.preco = preco
     this.estoque = estoque
 }
-const p1 = new Produto('camiseta', 50, 80)
+Produto.prototype.promocao = function (percentual) {
+    this.preco = this.preco - (this.preco * (percentual / 100))
+}
+const p1 = new Produto('camiseta', 1000, 80)
+p1.promocao(80)
+console.log(p1)
