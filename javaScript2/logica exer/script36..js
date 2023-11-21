@@ -4,7 +4,7 @@ function Produto(nome, preco, estoque) {
     this.estoque = estoque
 }
 Produto.prototype.promocao = function (percentual) {
-    this.preco = Number(this.preco - (this.preco * (percentual / 100)).toFixed(2))
+    this.preco = this.preco - (this.preco * (percentual / 100))
 }
 Produto.prototype.aumento = function (percentual) {
     this.preco = this.preco + (this.preco * (percentual / 100))
