@@ -14,6 +14,16 @@ function anoNascimentoUsuario() {
             const conta = Number(this.data()) - Number(this.idade.value) 
             console.log(conta)
             this.idade.value = ''
+            return conta
+        })
+    },
+    teste() {
+        this.button.addEventListener('click', e=> {
+            if(this.masculino.checked === true){
+                console.log('sou homem')
+            } else if (this.feminino.checked === true){
+                console.log('sou mulher')
+            }
         })
     }
   }  
@@ -21,3 +31,4 @@ function anoNascimentoUsuario() {
 
 const nascimento = anoNascimentoUsuario()
 nascimento.calculoIdade()
+nascimento.teste()
