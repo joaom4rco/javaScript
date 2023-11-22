@@ -32,7 +32,7 @@ body {
 
 .container {
     max-width: 640px;
-    margin: 50px auto;
+    margin: 20px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -77,5 +77,5 @@ img {
     width: 100px;
     height:100px;
     object-fit: cover;
-    object-position: center right;
+    object-position: center center;
 }

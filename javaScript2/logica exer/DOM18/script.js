@@ -17,32 +17,29 @@ function anoNascimentoUsuario() {
             console.log(conta)
             this.idade.value = ''
             this.anoNascimento = conta
-            this.imgHomem()
-            this.imgMulher()
+            this.img()
         })
     },
-    imgHomem() {
-        if(this.anoNascimento >= 60 && this.masculino.checked === true && this.feminino.checked === false ) {
-            console.log('ola')
-        }else if(this.anoNascimento >= 18 && this.anoNascimento < 60 && this.masculino.checked === true && this.feminino.checked === false) {
-            console.log('sou adulto')
-        }else if(this.anoNascimento < 18 && this.anoNascimento >= 11 && this.masculino.checked === true && this.feminino.checked === false) {
-            console.log('sou adolesçente')
-        }else if (this.anoNascimento < 11 && this.anoNascimento >= 1 && this.masculino.checked === true && this.feminino.checked === false) {
-            console.log('sou crinça')
+    img() {
+        let genero = this.masculino.checked ? 'homem' : 'mulher';
+        let faixaEtaria = '';
+  
+        if (this.anoNascimento >= 60) {
+           this.imagem.src = 'https://lillo.com.br/pub/media/magefan_blog/2017/04/a-crianca-de-2-anos.jpg'
+           faixaEtaria = 'idoso'
+        } else if (this.anoNascimento >= 18) {
+          this.imagem.src = 'https://lillo.com.br/pub/media/magefan_blog/2017/04/a-crianca-de-2-anos.jpg'
+          faixaEtaria = 'adulto'
+        } else if (this.anoNascimento >= 11) {
+          this.imagem.src = 'https://eyc7xs8f99a.exactdn.com/blog/wp-content/uploads/adolescente-em-primeiro-plano.jpg'
+          faixaEtaria = 'adolescente'
+        } else if (this.anoNascimento >= 1) {
+            this.imagem.src = 'https://lillo.com.br/pub/media/magefan_blog/2017/04/a-crianca-de-2-anos.jpg'
+            faixaEtaria = 'crinaça'
         }
-    },
-    imgMulher() {
-        if(this.anoNascimento >= 60 && this.feminino.checked === true && this.masculino.checked === false ) {
-            console.log('ola e m')
-        }else if(this.anoNascimento >= 18 && this.anoNascimento < 60 && this.feminino.checked === true && this.masculino.checked === false) {
-            console.log('sou adulta ')
-        }else if(this.anoNascimento < 18 && this.anoNascimento >= 11 && this.feminino.checked === true && this.masculino.checked === false) {
-            console.log('sou adolesçente e m')
-        }else if(this.anoNascimento < 11 && this.anoNascimento >= 2 && this.feminino.checked === true && this.masculino.checked === false) {
-            console.log('sou crinça e m')
-        }
-    },
+  
+        console.log(`Sou um(a) ${faixaEtaria} e ${genero}`);
+      },
   }  
 }
 
