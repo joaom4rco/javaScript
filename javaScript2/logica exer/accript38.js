@@ -2,15 +2,24 @@
 
 function produto(nome, valor) {
     return {
-        nome:nome,
-        cartao() {
-            console.log( valor + 30 )
+        get cartao() {
+            let nomeDoProduto = nome
+            const conta = valor + 20
+            console.log('nomeDoProduto:' + nomeDoProduto + ' ' +  'o seu valor pelo cartão ficou de:' + conta + 'R$')
         },
-        pix() {
-            console.log(valor - 5) 
+        get pix() {
+            let nomeDoProduto = nome
+            const conta = valor -5
+            console.log('nomeDoProduto:' + nomeDoProduto + ' ' +  'o seu valor pelo pix ficou de:' + conta + 'R$')
         }
+
+    
     }
+
 }
 const pt1 = produto('camiseta', 40)
-pt1.cartao()
-pt1.pix()
+const pt2 = produto('short', 80)
+const pt3 = produto('sapato', 120)
+const pt4 = produto('Xbox one', 1600)
+
+pt4.cartao
