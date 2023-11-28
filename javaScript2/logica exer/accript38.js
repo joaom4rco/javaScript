@@ -21,4 +21,3 @@ const pt2 = produto('short', 80)
 const pt3 = produto('sapato', 120)
 const pt4 = produto('Xbox one', 1600)
 
-pt4.cartao
