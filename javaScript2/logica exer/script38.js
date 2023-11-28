@@ -1,20 +1,19 @@
 function Professor(nome, disciplina,  salario) {
     this.nome =  nome
     this.disciplina = disciplina
-    let salarioPrivado = salario
-    Object.defineProperty(this, 'salario', {
-        enumerable: true, 
-        configurable: true,
-
-        get: () => {
-            return salarioPrivado;
-        },
-        set: valor => {
-            if(typeof salarioPrivado !== 'number')  console.log('o erro está no salario')
-            if
-            salarioPrivado = valor
-        }
-    })
+    this.salario = salario
 }
+Professor.prototype.descontoInss = function () {
+    if(this.salario <= 1320) {
+        this.salario = this.salario - (this.salario * (9 / 100))
+    }
+    if(this.salario >= 1321 && this.salario <= 2571) {
+        this.salario = this.salario - (this.salario * (12/ 100))
+    }
+    if(this.salario >= 2572 && this.salario <=) {
+        this.salario = this.salario - (this.salario * (percentual / 100))
+    }
+}
+
+
 const p1 = new Professor('joao marco', 'matematica', 1500)
-console.log(p1.salario)
